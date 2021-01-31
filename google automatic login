@@ -1,0 +1,30 @@
+from selenium import webdriver
+import time
+driver=webdriver.Chrome()
+time.sleep(3)
+driver.maximize_window()
+driver.delete_all_cookies
+driver.get('https://www.gmail.com')
+time.sleep(6)
+searchbar=driver.find_element_by_xpath('//*[@id="identifierId"]')
+searchbar.send_keys('2020eeb1222@iitrpr.ac.in')
+next_button=driver.find_element_by_xpath('//*[@id="identifierNext"]/div/button')
+next_button.click()
+time.sleep(6)
+passwd=driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
+passwd.send_keys('Yv@16042002')
+next_button=driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button')
+next_button.click()
+time.sleep(12)
+driver.find_element_by_xpath('//*[@id=":io"]/div/div').click()
+time.sleep(10)
+driver.find_element_by_class_name('wO').send_keys('priyanshuvarshney6@gmail.com')
+time.sleep(6)
+driver.find_element_by_xpath('//*[@id=":10l"]').send_keys('HELLO Priyanshu\n\n\n\n Regards,\n\n\nYash Ka Bot')
+time.sleep(6)
+driver.find_element_by_xpath('//*[@id=":nj"]').click()
+time.sleep(6)
+
+
+
+
