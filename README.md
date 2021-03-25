@@ -1,2 +1,2 @@
-# Seenium-Web-driver
+# Selenium-Web-driver
 Whatsapp and other automation
